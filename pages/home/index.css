@@ -6,7 +6,7 @@ main {
 
 .section-left {
     width: 45%;
-    height: 878px;
+    height: 100vh;
     background: var(--color-brand-1);
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ main {
 
 .section-right {
     width: 55%;
-    height: 878px;
+    height: 100vh;
     background: var(--color-grey-2);
     display: flex;
     flex-direction: column;
