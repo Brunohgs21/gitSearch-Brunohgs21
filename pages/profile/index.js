@@ -23,7 +23,7 @@ function exitPage() {
   const btn = document.querySelector('.btn-change')
 
   btn.addEventListener('click', ()=>{
-      window.location.href = '../home/index.html'
+      window.location.href = '../../index.html'
       body.innerHtml = ''
   })
 }

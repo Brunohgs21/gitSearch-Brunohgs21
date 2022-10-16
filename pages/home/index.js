@@ -45,7 +45,7 @@ async function searching(usuario) {
 
         setTimeout(() => {
 
-            window.location.href = '../profile/index.html'
+            window.location.href = './pages/profile/index.html'
         }, 4000)
     }
 
@@ -173,7 +173,7 @@ function createRecent(element) {
         console.log(data)
 
         localStorage.setItem("@gitsearch:user", JSON.stringify(data))
-        window.location.href = '../profile/index.html'
+        window.location.href = './pages/profile/index.html'
     })
 
     li.append(img, btn)
