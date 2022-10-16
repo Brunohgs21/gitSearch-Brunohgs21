@@ -211,8 +211,9 @@ button{
 
 .show-result {
     display: flex;
-    color: red;
+    color: var(--color-brand-1);
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .container-right {
@@ -224,6 +225,7 @@ button{
 form {
     display: flex;
     flex-direction: column;
+    margin-bottom: 75px;
 
 }
 
@@ -287,6 +289,7 @@ form {
     position: absolute;
     top: 65px;
     left: -38px;
+    pointer-events: all;
 
 
     width: 124px;

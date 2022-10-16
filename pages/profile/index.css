@@ -35,7 +35,7 @@ nav {
 
 .user-name {
 
-    width: 300px;
+    width: 350px;
     height: 29px;
 
 
@@ -53,7 +53,7 @@ nav {
 
 .user-bio {
 
-    width: 191px;
+    width: 410px;
     height: 19px;
 
 
@@ -139,7 +139,7 @@ figure img {
 .repo {
     width: 381px;
     height: 243px;
-    background:  #212529;
+    background: #212529;
     border: 3px solid #33363A;
     border-radius: 8px;
     margin-bottom: 2rem;
@@ -148,7 +148,7 @@ figure img {
 .repo-title {
     width: 263px;
     height: 24px;
-   margin-bottom: 21px;
+    margin-bottom: 21px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -163,6 +163,13 @@ figure img {
     width: 327px;
     height: 63px;
     margin-bottom: 32.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    
+   
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 
     font-family: 'Inter';
     font-style: normal;
@@ -211,13 +218,14 @@ figure img {
     color: #FFFFFF;
 }
 
-.btn-div{
+.btn-div {
     display: flex;
     gap: 12px;
-    
+
 }
 
 
-.repo:hover, .repo-btn:hover{
+.repo:hover,
+.repo-btn:hover {
     background-color: #191C1F;
 }

@@ -11,7 +11,7 @@ function formUser() {
         console.log(event.target)
 
         let p = event.target.previousElementSibling
-       console.log(p)
+        console.log(p)
         let user = p.previousElementSibling.value
         console.log(user)
         searching(user)
@@ -43,10 +43,10 @@ async function searching(usuario) {
         btn.classList.toggle('button-loading')
         searchUser(dataJson)
 
-         setTimeout(() => {
+        setTimeout(() => {
 
-              window.location.href = '../profile/index.html'
-         }, 4000)
+            window.location.href = '../profile/index.html'
+        }, 4000)
     }
 
 
@@ -86,6 +86,12 @@ function searchUser(user) {
     }
 
     console.log(newUser)
+
+    let search = alreadySearched(newUser)
+    console.log(search)
+    if(search > -1){
+        users.splice(search,1)
+    }
 
 
     if (users.length < 3) {
@@ -147,7 +153,7 @@ function createRecent(element) {
     img.addEventListener('mouseover', () => {
         btn.classList = 'found-btn-2'
     })
-    li.addEventListener('mouseleave',()=>{
+    li.addEventListener('mouseleave', () => {
         btn.classList = 'found-btn'
     })
 
@@ -155,10 +161,19 @@ function createRecent(element) {
         let idUser = event.target.id
         console.log
         let data = getDataLocalStorage()
-        let filter = data.find((element) => {
+        let finder = data.find((element) => {
             return element.id == idUser
         })
+        console.log(finder)
+        let index = alreadySearched(finder)
+        console.log(index)
+        data.splice(index,1)
 
+        data = [...data,finder]
+        console.log(data)
+
+        localStorage.setItem("@gitsearch:user", JSON.stringify(data))
+        window.location.href = '../profile/index.html'
     })
 
     li.append(img, btn)
@@ -167,14 +182,19 @@ function createRecent(element) {
 
 }
 
-
- function activeBtn() {
-     const input = document.querySelector('.user-input')
+function alreadySearched(user){
     
+    return getDataLocalStorage().findIndex(element => element.name === user.name)
+}
 
-     input.addEventListener('click',()=>{
-         const btn = document.querySelector('#user-button')
-         btn.classList = 'btn-pointer'
-     })
- }
- activeBtn()
+
+function activeBtn() {
+    const input = document.querySelector('.user-input')
+
+
+    input.addEventListener('click', () => {
+        const btn = document.querySelector('#user-button')
+        btn.classList = 'btn-pointer'
+    })
+}
+activeBtn()
