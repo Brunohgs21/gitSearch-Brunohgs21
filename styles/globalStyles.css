@@ -6,6 +6,9 @@
   list-style: none;
   text-decoration: none;
 }
+html{
+  font-family: 'inter', sans-serif;
+}
 
 :root{
     --color-brand-1: #C2255C;
