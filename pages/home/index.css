@@ -138,6 +138,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: transparent;
    
    
     gap: 10px;
@@ -158,9 +159,13 @@ button{
     pointer-events: none;
 }
 
+#color{
+    color: #FFFFFF;
+}
+
 .btn-pointer{
     pointer-events: all;
-    border:1px solid #FFFFFF;
+    background-color: var(--color-brand-1);
 }
 .button-text {
     width: 150px;

@@ -194,6 +194,8 @@ function activeBtn() {
 
     input.addEventListener('click', () => {
         const btn = document.querySelector('#user-button')
+        const span = document.querySelector('.button-text')
+        span.id = 'color'
         btn.classList = 'btn-pointer'
     })
 }
