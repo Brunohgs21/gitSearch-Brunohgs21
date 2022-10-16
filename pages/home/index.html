@@ -4,12 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Git Search</title>
   </head>
   <body>
-    <main></main>
+    <main>
+
+      <section  class="section-left">
+        <div class="container-left">
+
+          <h1 class="section-title">Git Search</h1>
+          <h2 class="section-subtitle">Encontre e se conecte com profissionais de forma rápida e fácil</h2>
+          <div class="div-founds">
+            <p class="text-find">Achados recentemente:</p>
+            <ul class="found-users">
+              
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-right">
+        <div class="container-right">
+
+          <p class="text-search">Procurar por um usuário</p>
+  
+          <form>
+            <label class="label-user" for="user">Usuário gitHub</label>
+            <input class="user-input" type="text" name="user" id="user" placeholder="Digite um usuário do gitHub aqui" required="true">
+            <p class="result">Usuário não encontrado</p>
+            <button id="user-button" type="submit"><span class="button-text">Ver perfil do gitHub</span></button>
+          </form>
+        </div>
+      </section>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
