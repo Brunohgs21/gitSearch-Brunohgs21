@@ -39,15 +39,12 @@ nav {
     height: 29px;
 
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    /* identical to box height */
-
-
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 
 }
 
@@ -57,7 +54,7 @@ nav {
     height: 19px;
 
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -72,8 +69,7 @@ figure {
     width: 80px;
     height: 80px;
 
-    background-color: red;
-    border: 2px solid #D6336C;
+    border: 2px solid var(--color-brand-2);
     border-radius: 150px;
 }
 
@@ -89,9 +85,9 @@ figure img {
     height: 38px;
 
 
-    background: #D6336C;
+    background: var(--color-brand-2);
     border-radius: 8px;
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 }
 
 
@@ -103,7 +99,7 @@ figure img {
 
     background: rgba(255, 255, 255, 0.08);
     border-radius: 8px;
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 }
 
 .div-user {
@@ -139,8 +135,8 @@ figure img {
 .repo {
     width: 381px;
     height: 243px;
-    background: #212529;
-    border: 3px solid #33363A;
+    background: var(--color-grey-2);
+    border: 3px solid var(--color-grey-3);
     border-radius: 8px;
     margin-bottom: 2rem;
 }
@@ -150,13 +146,13 @@ figure img {
     height: 24px;
     margin-bottom: 21px;
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
 
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 }
 
 .repo-text {
@@ -171,7 +167,7 @@ figure img {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -196,10 +192,10 @@ figure img {
     gap: 10px;
     width: 93px;
     height: 28px;
-    background: #212529;
-    border: 1px solid #FFFFFF;
+    background: var(--color-grey-2);
+    border: 1px solid var(--color-grey-7);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 }
 
 
@@ -212,10 +208,10 @@ figure img {
     gap: 10px;
     width: 56px;
     height: 28px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--color-grey-7);
     border-radius: 4px;
-    background-color: #212529;
-    color: #FFFFFF;
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-7);
 }
 
 .btn-div {
@@ -227,5 +223,5 @@ figure img {
 
 .repo:hover,
 .repo-btn:hover {
-    background-color: #191C1F;
+    background-color: var(--color-grey-1);
 }

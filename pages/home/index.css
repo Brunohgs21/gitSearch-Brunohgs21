@@ -36,15 +36,12 @@ main {
 
 
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 150%;
-    /* identical to box height, or 48px */
-
-
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 }
 
 .section-subtitle {
@@ -53,15 +50,12 @@ main {
     height: 60px;
     margin-bottom: 55px;
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    /* or 30px */
-
-
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 
 }
 
@@ -71,15 +65,12 @@ main {
     height: 24px;
 
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    /* identical to box height, or 24px */
-
-
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 
 }
 
@@ -90,15 +81,12 @@ main {
     margin-bottom: 45px;
 
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
-    /* identical to box height, or 30px */
-
-
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 
 }
 
@@ -109,15 +97,12 @@ main {
     margin-bottom: 1rem;
 
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-    /* identical to box height, or 21px */
-
-
-    color: #FFFFFF;
+    color: var(--color-grey-7);
 
 }
 
@@ -125,9 +110,10 @@ main {
     padding: 16px;
     width: 316px;
     height: 38px;
-    color: #FFFFFF;
+    color: var(--color-grey-7);
+    font-family: 'inter', sans-serif;
 
-    background: #191C1F;
+    background: var(--color-grey-1);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 4px;
     margin-bottom: 20px;
@@ -171,7 +157,7 @@ button{
     width: 150px;
     height: 21px;
 
-    font-family: 'Inter';
+   
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -196,7 +182,7 @@ button{
     width: 16px;
     height: 16px;
     border: 3px solid transparent;
-    border-top-color: #FFFFFF;
+    border-top-color: var(--color-grey-7);
     border-radius: 50%;
     animation: button-loading-spinner 1s ease infinite;
 
@@ -260,8 +246,8 @@ form {
     width: 44px;
     height: 44px;
     border-radius: 100%;
-    background: #D9D9D9;
-    border: 1px solid #FFFFFF;
+    background: var(--color-grey-7);
+    border: 1px solid var(--color-grey-7);
 
 
 }
@@ -281,7 +267,7 @@ form {
     height: 26px;
 
 
-    background: #FFFFFF;
+    background: var(--color-grey-7);
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
@@ -304,7 +290,7 @@ form {
     height: 26px;
 
 
-    background: #FFFFFF;
+    background: var(--color-grey-7);
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
