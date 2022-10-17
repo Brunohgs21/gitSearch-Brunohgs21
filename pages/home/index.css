@@ -221,7 +221,12 @@ form {
 }
 
 .div-founds {
+    display: none;
+    align-items: center;
+}
+.div-founds-flex {
     display: flex;
+    gap: 1rem;
     align-items: center;
 }
 

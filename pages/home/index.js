@@ -89,8 +89,8 @@ function searchUser(user) {
 
     let search = alreadySearched(newUser)
     console.log(search)
-    if(search > -1){
-        users.splice(search,1)
+    if (search > -1) {
+        users.splice(search, 1)
     }
 
 
@@ -167,9 +167,9 @@ function createRecent(element) {
         console.log(finder)
         let index = alreadySearched(finder)
         console.log(index)
-        data.splice(index,1)
+        data.splice(index, 1)
 
-        data = [...data,finder]
+        data = [...data, finder]
         console.log(data)
 
         localStorage.setItem("@gitsearch:user", JSON.stringify(data))
@@ -182,8 +182,8 @@ function createRecent(element) {
 
 }
 
-function alreadySearched(user){
-    
+function alreadySearched(user) {
+
     return getDataLocalStorage().findIndex(element => element.name === user.name)
 }
 
@@ -200,3 +200,17 @@ function activeBtn() {
     })
 }
 activeBtn()
+
+
+function divFounds() {
+    const div = document.querySelector('.div-founds')
+    let array = getDataLocalStorage()
+    if (array.length == 0){
+        div.classList = 'div-founds'
+
+    }
+    else{
+        div.classList = 'div-founds-flex'
+    }
+}
+divFounds()
