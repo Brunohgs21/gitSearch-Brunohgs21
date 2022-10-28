@@ -201,6 +201,7 @@ button{
     display: none;
 }
 
+
 .show-result {
     display: flex;
     color: var(--color-brand-1);

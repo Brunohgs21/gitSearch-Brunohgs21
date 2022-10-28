@@ -190,9 +190,11 @@ function alreadySearched(user) {
 
 function activeBtn() {
     const input = document.querySelector('.user-input')
+    const p = document.querySelector('.result')
 
 
     input.addEventListener('click', () => {
+
         const btn = document.querySelector('#user-button')
         const span = document.querySelector('.button-text')
         span.id = 'color'
@@ -205,12 +207,25 @@ activeBtn()
 function divFounds() {
     const div = document.querySelector('.div-founds')
     let array = getDataLocalStorage()
-    if (array.length == 0){
+    if (array.length == 0) {
         div.classList = 'div-founds'
 
     }
-    else{
+    else {
         div.classList = 'div-founds-flex'
     }
 }
 divFounds()
+
+
+function comeBackBtn() {
+    const p = document.querySelector('.result')
+    const input = document.querySelector('.user-input')
+
+    input.addEventListener('click', () => {
+        if (p.classList.contains('show-result')) {
+            p.classList = "result"
+        }
+    })
+}
+comeBackBtn()
